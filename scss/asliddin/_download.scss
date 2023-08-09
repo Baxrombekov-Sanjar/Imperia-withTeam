@@ -1,1 +1,50 @@
 // Скачай приложение и получай призы каждый день
+:root{
+    // --border: 1px solid;
+}
+
+.download{
+    width: 100%;
+    border: var(#FFC000);
+    color: white;
+    display: flex;
+    justify-content: center;
+    background: radial-gradient(100% 1071.07% at 0% 0%, #0F0D2B 0%, #0C0926 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    &-container{
+        width: 88%;
+        border: var(--border);
+        display: flex;
+        position: relative;
+        padding-bottom: 40px;
+        &-img{
+            width: 32%;
+            border: var(--border);
+            img{
+                position: absolute;
+                width: 350px;
+                bottom: 30px;
+                left: -40px;
+            }
+
+        }
+        &-items{
+            width: 68%;
+            border: var(--border);
+            h2{
+                font-size: 34px;
+                line-height: 50px;
+            }
+            p{
+                font-size: 14px;
+                margin-top: 20px;
+                line-height: 20px;
+                color: whitesmoke;
+            }
+            div{
+                display: flex;
+                margin-top: 30px;
+                gap: 20px;
+            }
+        }
+    }
+}

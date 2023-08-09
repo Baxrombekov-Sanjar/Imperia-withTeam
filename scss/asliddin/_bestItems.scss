@@ -1,1 +1,50 @@
 // Лучшие товары
+
+:root{
+    // --border: 1px solid;
+}
+
+.bestitems{
+    width: 100%;
+    border: var(--border);
+    h1{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &-container{
+        width: 92%;
+        border: var(--border);
+        margin:0 auto;
+        display: flex;
+        justify-content: space-between;
+        &-items{
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 0px 10px;
+            background: white;
+            h4{
+                padding-top: 10px;
+                margin-top: -5px;
+            }
+            P{
+                font-size: 12px;
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            button{
+                width: 100%;
+                margin-top: 10px;
+                height: 35px;
+                background-color: #FFC000;
+                border: 0px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

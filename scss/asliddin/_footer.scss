@@ -1,0 +1,43 @@
+
+:root{
+    // --border: 1px solid;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.footer{
+    width: 100%;
+    border: var(--border);
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    &-container{
+        width: 88%;
+        border: var(--border);
+        display: flex;
+        justify-content: space-between;
+        &-first-items{
+            line-height: 20px !important;
+            p{
+                margin-top: 20px;
+                line-height: 25px;
+            }
+            img{
+                margin-top: 20px;
+                width: 100px;
+            }
+        }
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-between ;
+            
+            li{
+                line-height: 35px;
+            }
+        }
+    }
+}
