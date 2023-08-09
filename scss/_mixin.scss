@@ -1,0 +1,18 @@
+@mixin navBtn {
+  border-radius: 4px;
+  background: $yellow;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.44px;
+}
+@mixin productsBtn {
+  border-radius: 6px;
+  background: var(--gold, #ffc000);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  width: 238px;
+  padding: 8px 24px;
+}
