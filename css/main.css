@@ -347,7 +347,7 @@ template {
 .header__nav {
   padding: 20px 0;
   background: var(--gray-6, #fafafa);
-  box-shadow: 0px 14px 64px -4px rgba(24, 39, 75, 0.12), 0px 8px 22px -6px rgba(24, 39, 75, 0.12);
+  box-shadow: 0px 14px 64px -4px rgba(24, 39, 75, 0.12), 0px 8px 22px -6px rgba 24, 39, 75, 0.12;
 }
 .header__nav-wrapper {
   display: flex;
@@ -377,6 +377,11 @@ template {
   font-weight: 500;
   line-height: 140%;
   letter-spacing: 0.1px;
+  transition: all 0.5s ease-in-out;
+}
+.header__nav-left ul li a:hover {
+  color: #000000;
+  cursor: pointer;
 }
 .header__nav-right {
   width: 30%;
@@ -447,419 +452,51 @@ template {
   }
 }
 .main {
-  background-color: var(--gray-6, #FAFAFA);
-  margin-top: 64px;
+  background: var(--gray-6, #fafafa);
 }
-.main__zakaz h2 {
+.main h4 {
   text-align: center;
+  padding-top: 64px;
   font-size: 34px;
   font-weight: 700;
   line-height: 140%;
   letter-spacing: 0.25px;
-  margin-bottom: 80px;
+  padding-bottom: 40px;
 }
-.main__zakaz-wrapper {
-  width: 85%;
-  margin: 0 auto;
+.main__payment {
   display: flex;
   justify-content: space-between;
 }
-.main__zakaz-left {
-  width: 51.5%;
-}
-.main__zakaz-price {
-  width: 460px;
-  background-color: var(--yellow, #FFC000);
-  margin-bottom: 48px;
-}
-.main__zakaz-price p:first-child {
-  padding: 16px;
-  padding-bottom: 25px;
+.main__payment-img {
+  width: 55%;
   display: flex;
-  justify-content: space-between;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: 0.15px;
+  justify-content: center;
 }
-.main__zakaz-price p:last-child {
-  padding: 16px;
-  padding-top: 0;
-  display: flex;
-  justify-content: space-between;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: 0.15px;
+.main__payment-input {
+  width: 45%;
 }
-.main__zakaz-imgs {
-  width: 460px;
-  display: flex;
-  justify-content: space-between;
-}
-.main__zakaz-right {
-  width: 48.5%;
-}
-.main__zakaz-right .hide {
-  display: none;
-}
-.main__zakaz-right input {
+.main__payment-input input,
+.main__payment-input button {
+  width: 100%;
   display: block;
-  width: 100%;
-  border: 0;
-  margin-bottom: 24px;
-  padding: 18px 0 19px 16px;
+  margin-bottom: 32px;
+  padding: 19px 0px 19px 16px;
   background: var(--grey-7, #f1f1f1);
+  border: none;
 }
-.main__zakaz-right button {
-  width: 100%;
-  padding: 21px 0;
+.main__payment-input button {
+  background: var(--yellow, #FFC000);
   color: var(--black, #0d0d0d);
   font-size: 14px;
-  border: 0;
   font-weight: 600;
   line-height: 140%;
-  background-color: var(--yellow, #FFC000);
-  letter-spacing: 0.75px;
-  text-transform: uppercase;
-  transition: all 0.5s ease-in-out;
-  margin-top: 21px;
-}
-.main__zakaz-right button:hover {
-  transform: scale(0.9);
-  border-radius: 10px;
-  font-weight: 600;
-  cursor: pointer;
-}
-.main__zakaz-imgs2 {
-  display: none;
 }
 
-@media screen and (max-width: 400px) {
-  .imperia {
-    width: 100%;
-  }
-  .imperia .main {
-    width: 100%;
-    margin-top: 0;
-  }
-  .imperia .main__zakaz h2 {
-    padding-top: 24px;
-    padding-left: 28px;
-    text-align: left;
-    margin-bottom: 24px;
-  }
-  .imperia .main__zakaz-wrapper {
-    display: block;
-  }
-  .imperia .main__zakaz-left {
-    width: 100%;
-  }
-  .imperia .main__zakaz-left .hide {
-    display: none;
-  }
-  .imperia .main__zakaz-price {
-    width: 100%;
-  }
-  .imperia .main__zakaz-price p {
-    font-size: 14px;
-  }
-  .imperia .main__zakaz-right {
-    width: 100%;
-  }
-  .imperia .main__zakaz-right button .show {
-    display: none;
-  }
-  .imperia .main__zakaz-right button .hide {
-    display: block;
-  }
-  .imperia .main__zakaz-imgs2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .imperia .main__zakaz-imgs2 img:nth-child(3), .imperia .main__zakaz-imgs2 img:nth-child(4) {
-    margin-top: 38px;
-  }
-}
-.main__yourzakaz h3 {
-  text-align: center;
-  font-size: 34px;
-  font-weight: 700;
-  line-height: 140%;
-  margin-top: 64px;
-  margin-bottom: 32px;
-  letter-spacing: 0.25px;
-}
-.main__yourzakaz-clothes {
-  width: 85%;
-  margin: 0 auto;
-  border-radius: 12px;
-  background: var(--white, #fff);
-  display: flex;
-  margin-bottom: 24px;
-}
-.main__yourzakaz-info {
-  margin-left: 30px;
-  margin-right: 24px;
-}
-.main__yourzakaz-info .text {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 160%;
-  margin-bottom: 43px;
-  margin-top: 12px;
-  letter-spacing: 0.25px;
-}
-.main__yourzakaz-info div:nth-child(1) {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.main__yourzakaz-info div:nth-child(1) b {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 140%;
-  margin-top: 25px;
-}
-.main__yourzakaz-info div:nth-child(2) {
-  margin-top: 46px;
-}
-.main__yourzakaz-info div:nth-child(2) i {
-  color: var(--gold, #FFC000);
-}
-.main__yourzakaz-info div:last-child {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.main__yourzakaz-info div:last-child p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: 0.44px;
-}
-.main__yourzakaz-info div:last-child p .show {
-  padding-left: 40px;
-}
-.main__yourzakaz-info div:last-child p .show b {
-  padding-right: 15px;
-}
-.main__yourzakaz-info div:last-child .fa-minus,
-.main__yourzakaz-info div:last-child .fa-plus {
-  width: 37px;
-  height: 37px;
-  background-color: var(--yellow, #FFC000);
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.main__yourzakaz-info div:last-child .span {
-  width: 93px;
-  height: 37px;
-  background-color: var(--gray-6, #FAFAFA);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.main__yourzakaz-info div:last-child .hide {
-  display: none;
-}
-.main__yourzakaz-info div .fa-trash-can {
-  display: none;
-}
-.main__yourzakaz-info div .fa-xmark {
-  font-size: 24px;
-}
-.main__yourzakaz .third {
-  display: none;
-}
-
-@media screen and (max-width: 400px) {
-  .imperia {
-    width: 100%;
-  }
-  .imperia .main__yourzakaz h3 {
-    text-align: left;
-    padding-left: 28px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-  }
-  .imperia .main__yourzakaz-clothes {
-    width: 85%;
-  }
-  .imperia .main__yourzakaz-clothes img {
-    width: 85px;
-    height: 94px;
-    border-radius: 12px;
-  }
-  .imperia .main__yourzakaz .third {
-    display: flex;
-  }
-  .imperia .main__yourzakaz .third b {
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 140%;
-    letter-spacing: 0.75px;
-    margin-top: 0;
-    margin-bottom: 0;
-    text-transform: uppercase;
-  }
-  .imperia .main__yourzakaz .third div:nth-child(2) {
-    margin-top: 0;
-  }
-  .imperia .main__yourzakaz .third div:nth-child(2) .fa-minus {
-    margin-left: 15px;
-  }
-  .imperia .main__yourzakaz .third div:nth-child(2) .fa-minus,
-  .imperia .main__yourzakaz .third div:nth-child(2) .fa-plus {
-    color: #fff;
-  }
-  .imperia .main__yourzakaz-info {
-    margin-right: 0;
-    margin-left: 8px;
-  }
-  .imperia .main__yourzakaz-info .show {
-    display: none;
-  }
-  .imperia .main__yourzakaz-info div .fa-xmark {
-    display: none;
-  }
-  .imperia .main__yourzakaz-info div:nth-child(1) b {
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 140%;
-    letter-spacing: 0.75px;
-    margin-top: 0;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-  }
-  .imperia .main__yourzakaz-info div:nth-child(2) i {
-    color: #000;
-  }
-  .imperia .main__yourzakaz-info div p {
-    font-size: 12px;
-  }
-  .imperia .main__yourzakaz-info div:nth-child(3) i {
-    width: 24px;
-    height: 24px;
-  }
-  .imperia .main__yourzakaz-info div:nth-child(3) .span {
-    width: 59px;
-    height: 24px;
-  }
-  .imperia .main__yourzakaz-info div:nth-child(3) .fa-minus {
-    margin-left: 15px;
-  }
-  .imperia .main__yourzakaz-info .hide {
-    display: none;
-  }
-  .imperia .main__yourzakaz-info .fa-trash-can {
-    display: block;
-  }
-  .imperia .main__yourzakaz-info .text {
-    display: none;
-  }
-}
-.main__shops {
-  width: 85%;
-  margin: 0 auto;
-}
-.main__shops h3 {
-  text-align: center;
-  font-size: 34px;
-  line-height: 140%;
-  margin-top: 64px;
-  margin-bottom: 32px;
-  letter-spacing: 0.25px;
-}
-.main__shops-example {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  -moz-column-gap: 15px;
-       column-gap: 15px;
-}
-
-@media screen and (max-width: 400px) {
-  .main__shops h3 {
-    margin-top: 56px;
-    margin-bottom: 16px;
-  }
-  .main__shops-example {
-    grid-template-columns: auto;
-    -moz-column-gap: 0;
-         column-gap: 0;
-    row-gap: 16px;
-  }
-  .main__shops-example img {
-    width: 100%;
-    height: 107px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-.main__categories {
-  padding-bottom: 80px;
-}
-.main__categories h3 {
-  text-align: center;
-  font-size: 34px;
-  line-height: 140%;
-  margin-top: 64px;
-  margin-bottom: 32px;
-  letter-spacing: 0.25px;
-}
-.main__categories-items {
-  width: 85%;
-  margin: 0 auto;
-  -moz-column-gap: 17px;
-       column-gap: 17px;
-  row-gap: 24px;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
-}
-.main__categories-items button {
-  border-radius: 8px;
-  background: var(--yellow, #ffc000);
-  width: 216px;
-  height: 80px;
-  border: 0;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 0.15px;
-  transition: all 0.5s ease-in-out;
-}
-.main__categories-items button:hover {
-  opacity: 0.8;
-  transform: scale(0.9);
-  font-weight: 600;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 400px) {
-  .main__categories {
-    padding-bottom: 56px;
-  }
-  .main__categories h3 {
-    margin-top: 56px;
-  }
-  .main__categories-items {
-    grid-template-columns: auto;
-    row-gap: 16px;
-  }
-  .main__categories-items img, .main__categories-items button {
-    width: 100%;
-  }
-  .main__categories-items button {
-    margin-top: 40px;
-  }
-}
 .footer {
-  background-color: #fff;
+  fill: var(--white, #fff);
 }
 .footer__wrapper {
+  margin-top: 64px;
   width: 85%;
   display: flex;
   justify-content: space-between;
