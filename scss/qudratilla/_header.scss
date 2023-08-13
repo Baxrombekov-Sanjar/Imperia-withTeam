@@ -1,0 +1,377 @@
+*{
+    padding: 0%;
+    margin: 0% auto;
+}
+.imperia{
+    margin: 0% auto;
+    padding: 0%;
+}
+
+:root{
+    // --border: 1px solid;
+}
+.header{
+    width: 100%;
+    height: 1750px;
+    border:ie-hex-str($color: #000000);
+&__nav{
+    width: 100%;
+    height: 112px;
+    border: var(--border);
+    box-shadow: 0px 14px 10px -4px #0000001f;
+
+}
+&__nav-black{
+    width: 100%;
+    height: 35%;
+    border: var(--border);
+    background-color: black;
+}
+&__nav-lang{
+    width: 70px;
+    height: 100%;
+    border: var(--border) white;
+    margin-left: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+&__nav-uzb{
+    opacity: 50%;
+}
+&__nav-lang p{
+    color: white;
+}
+&__nav-white{
+    width: 100%;
+    height: 65%;
+    border: var(--border);
+    display: flex;
+}
+&__nav-container{
+    width: 85%;
+    height: 100%;
+    border: var(--border);
+    display: flex;
+}
+&__nav-logo{
+    width: 20%;
+    height: 100%;
+    border: var(--border);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+&__nav-none{
+    display: none;
+}
+&__nav-list{
+    width: 35%;
+    height: 100%;
+    border: var(--border);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+&__nav-list p{
+    font-size: 14px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+&__nav-list p:hover{
+    border-bottom: 2px solid #000;
+}
+&__nav-freeplace{
+    width: 10%;
+    height: 100%;
+    border: var(--border);
+}
+&__nav-btn{
+    width: 35%;
+    height: 100%;
+    border: var(--border);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+&__nav-btn button{
+    width: 70px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: rgb(190, 188, 188);
+    border-radius: 5px;
+    border: none;
+    
+}
+.big{
+    width: 200px;
+    height: 30px;
+    background-color: #FFC000;
+}
+&__nav-btn button:hover{
+    background-color: #a47c01;
+    transition: 1s;
+    font-size: large;
+    color: white;
+}
+.big:hover{
+    background-color:#a47c01;
+    color: white;
+}
+.p{
+    margin-top: 50px;
+    margin-left: 150px;
+}
+&__hero{
+    width: 100%;
+    height: 1600px;
+    border: var(--border);
+}
+&__hero-container{
+    width: 88%;
+    height: 1490px;
+    border: var(--border);
+    margin-top: 40px;
+    display: flex;
+}
+&__hero-buttons{
+    display: none;
+}
+&__hero-menu{
+    width: 264px;
+    height: 288px;
+    border: var(--border);
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+}
+&__hero-list{
+    width: 850px;
+    height: 1420px;
+    border: var(--border);
+}
+.filter{
+    width: 264px;
+    height: 64px;
+    border: var(--border);
+    display: flex;
+    align-items: center;
+}
+.filter p{
+    font-size: 30px;
+    margin-left: 10px;
+}
+.category{
+    width: 264px;
+    height: 48px;
+    border: var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.category p{
+    margin-left: 10px;
+}
+.category i{
+    margin-left: 120px;
+}
+.btn{
+    width: 100%;
+    height: 80px;
+    border: var(--border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn button{
+    width: 232px;
+    height: 40px;
+    background-color: #FFC000;
+    border-radius: 5px;
+    border: none;
+}
+.btn button:hover{
+    background-color: #a47c01;
+    transition: 1s;
+    font-size: large;
+    color: white;
+}
+&__hero-box{
+    width: 100%;
+    height: 340px;
+    border: var(--border);
+    display: flex;
+}
+&__hero-box-2{
+    width: 100%;
+    height: 340px;
+    border: var(--border);
+    display: flex;
+    margin-top: 20px;
+}
+.list{
+    width: 264px;
+    height: 340px;
+    border: var(--border);
+
+}
+.list-photo{
+    width: 100%;
+    height: 80%;
+    border: var(--border);
+}
+.text-h5{
+    font-size: 20px;
+}
+.word{
+    display: flex;
+}
+.word img{
+    margin-top: 10px;
+    margin-left: 1px;
+}
+.word p{
+    margin-top: 10px;
+    margin-left: 100px;
+}
+&__hero-extra{
+    display: none;
+}
+}
+
+
+
+
+
+
+
+@media screen and (max-width:400px){
+    *{
+        margin: 0%;
+        padding: 0;
+    }
+    .header{
+        width: 400px;
+        height: 2000px;
+    &__nav{
+        width: 100%;
+        height: 70px;
+        display: flex;
+    }
+    &__nav-black{
+        display: none;
+    }
+    &__nav-white{
+        width: 100%;
+        height: 100%;
+    }
+    &__nav-container{
+        width: 100%;
+        height: 100%;
+    }
+    &__nav-logo{
+        width: 50%;
+        height: 100%;
+    }
+    &__nav-none{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__nav-none i{
+        margin-right: 30px;
+        margin-left: 35px;
+    }
+    &__nav-logo .img{
+        display: none;
+    }
+    &__nav-list{
+        display: none;
+    }
+    &__nav-freeplace{
+        width: 30%;
+        height: 100%;
+    }
+    &__nav-btn{
+        width: 20%;
+        height: 100%;
+    }
+    &__nav-btn i{
+        margin-left: 20px;
+    }
+    &__nav-btn button{
+        display: none;
+    }
+    &__hero{
+        width: 100%;
+        height: 2000px;
+    }
+    &__hero-container{
+        width: 88%;
+        height: 1800px;
+        margin-left: 20px;
+
+    }
+    &__hero-list{
+        width: 100%;
+        height: 1800px;
+
+    }
+    .p{
+        display: none;
+    }
+    &__hero-buttons{
+        display: flex;
+        width: 80%;
+        height: 50px;
+        border: var(--border);
+        margin-top: 20px;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 40px;
+    }
+    &__hero-buttons button{
+        width: 140px;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+    }
+    &__hero-box{
+        display: none;
+    }
+    &__hero-box-2{
+        display: none;
+    }
+    &__hero-menu{
+        display: none;
+    }
+    .list{
+        display: none;
+    }
+    &__hero-extra{
+        width: 350px;
+        height: 300px;
+        border: var(--border);
+        display: flex;
+    }
+    .responsiv-list{
+        width: 152px;
+        height: 268px;
+        border: var(--border);
+        margin-left: 15px;
+    }
+    .responsiv-photo{
+        width: 152px;
+        height: 176px;
+        border: var(--border);
+    }
+    .responsiv-cost{
+        width: 100%;
+        height: 92px;
+        border: var(--border);
+    }
+    .responsiv-cost p{
+        margin-top: 18px;
+    }
+    
+}
+}
