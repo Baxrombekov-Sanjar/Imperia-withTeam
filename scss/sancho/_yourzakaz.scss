@@ -1,0 +1,197 @@
+.main__yourzakaz {
+  h3 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 140%;
+    margin-top: 64px;
+    margin-bottom: 32px;
+    letter-spacing: 0.25px;
+  }
+  &-clothes {
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 12px;
+    background: var(--white, #fff);
+    display: flex;
+    margin-bottom: 24px;
+  }
+  &-info {
+    margin-left: 30px;
+    margin-right: 24px;
+    .text {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 160%;
+      margin-bottom: 43px;
+      margin-top: 12px;
+      letter-spacing: 0.25px;
+    }
+    div {
+      &:nth-child(1) {
+        b {
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 140%;
+          margin-top: 25px;
+        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &:nth-child(2) {
+        margin-top: 46px;
+        i {
+          color: $gold;
+        }
+      }
+      &:last-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 140%;
+          letter-spacing: 0.44px;
+          .show {
+            padding-left: 40px;
+            b {
+              padding-right: 15px;
+            }
+          }
+        }
+        .fa-minus,
+        .fa-plus {
+          width: 37px;
+          height: 37px;
+          background-color: $yellow;
+          color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .span {
+          width: 93px;
+          height: 37px;
+          background-color: $whitesmoke2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .hide {
+          display: none;
+        }
+      }
+      .fa-trash-can {
+        display: none;
+      }
+      .fa-xmark {
+        font-size: 24px;
+      }
+    }
+  }
+  .third {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .imperia {
+    width: 100%;
+    .main {
+      &__yourzakaz {
+        h3 {
+          text-align: left;
+          padding-left: 28px;
+          margin-top: 40px;
+          margin-bottom: 20px;
+        }
+        &-clothes {
+          width: 85%;
+          img {
+            width: 85px;
+            height: 94px;
+            border-radius: 12px;
+          }
+        }
+        .third {
+          display: flex;
+          b {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 140%;
+            letter-spacing: 0.75px;
+            margin-top: 0;
+            margin-bottom: 0;
+            text-transform: uppercase;
+          }
+          div {
+            &:nth-child(2) {
+              margin-top: 0;
+              .fa-minus {
+                margin-left: 15px;
+              }
+              .fa-minus,
+              .fa-plus {
+                color: #fff;
+              }
+            }
+          }
+        }
+        &-info {
+          margin-right: 0;
+          margin-left: 8px;
+          .show {
+            display: none;
+          }
+          div {
+            .fa-xmark {
+              display: none;
+            }
+            &:nth-child(1) {
+              b {
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 140%;
+                letter-spacing: 0.75px;
+                margin-top: 0;
+                margin-bottom: 25px;
+                text-transform: uppercase;
+              }
+            }
+            &:nth-child(2) {
+              i {
+                color: #000;
+              }
+            }
+            p {
+              font-size: 12px;
+            }
+            &:nth-child(3) {
+              i {
+                width: 24px;
+                height: 24px;
+              }
+              .span {
+                width: 59px;
+                height: 24px;
+              }
+              .fa-minus {
+                margin-left: 15px;
+              }
+            }
+          }
+          .hide {
+            display: none;
+          }
+          .fa-trash-can {
+            display: block;
+          }
+          .text {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

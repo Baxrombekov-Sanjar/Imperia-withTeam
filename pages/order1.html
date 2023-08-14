@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <!-- !!! -->
+    <link rel="stylesheet" href="../css/main.css" /> 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -16,6 +17,273 @@
   <body>
     <!-- Оформление заказа - Sanjarbek -->
     <div class="imperia">
+      <header class="header">
+        <div class="header__lanquages hide">
+          <div>
+            <span>RU</span>
+            <span>UZB</span>
+          </div>
+        </div>
+        <nav class="header__nav">
+          <div class="header__nav-wrapper">
+            <div class="header__nav-left hide">
+              <h2>MILANDI</h2>
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Главная</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">О нас</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Категории</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Сотрудничество</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header__nav-menu">
+              <i class="fa-solid fa-bars"></i>
+              <img src="../img/Logo (1).svg" alt="logo" />
+            </div>
+            <div class="header__nav-right">
+              <button class="hide">Войти</button>
+              <button class="hide">Зарегистрироваться</button>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="main">
+        <section class="main__zakaz">
+          <h2>Оформление заказа</h2>
+          <div class="main__zakaz-wrapper">
+            <div class="main__zakaz-left">
+              <div class="main__zakaz-price">
+                <p>Товаров: (1) <span>Сумма: $235</span></p>
+                <p>Общая сумма к оплате: <span>$235</span></p>
+              </div>
+              <div class="main__zakaz-imgs hide">
+                <img src="../img/click.png" alt="clickUp" />
+                <img src="../img/payme.png" alt="payme" />
+              </div>
+            </div>
+            <form action="#" class="main__zakaz-right">
+              <input type="text" placeholder="Адресс доставки" />
+              <input type="text" placeholder="Имя" />
+              <input type="tel" placeholder="Номер телефона" />
+              <div class="main__zakaz-imgs2 show">
+                <img
+                  src="../img/click.png"
+                  width="143"
+                  height="39"
+                  alt="clickUp"
+                />
+                <img src="../img/payme.png" width="143" height="39" alt="payme" />
+                <img src="../img/uzcard.png" alt="uzcard" />
+                <img src="../img/naxt.png" alt="naxt" />
+              </div>
+              <button>
+                <span class="show">Перейти к оплате</span
+                ><span class="hide">Оформить заказ</span>
+              </button>
+            </form>
+          </div>
+        </section>
+        <section class="main__yourzakaz">
+          <h3>Ваш заказ</h3>
+          <div class="main__yourzakaz-clothes">
+            <div class="main__yourzakaz-img">
+              <img src="../img/okambe.png" alt="boywithhuddi" />
+            </div>
+            <div class="main__yourzakaz-info">
+              <div>
+                <b>Худи мужская белая с принтом.</b>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <div class="hide">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+                <span>3,5</span>
+              </div>
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
+                tellus purus, id pretium viverra rutrum. Et blandit nunc a
+                pellentesque in cras facilisis sapien, dictum. At vel egestas
+                urna morbi tortor leo ut. In curabitur at pretium vulputate in.
+                Porta bibendum feugiat congue id rhoncus. Vel semper enim, eget.
+              </p>
+              <div>
+                <p>
+                  25.000 Сум <span class="show"><b>Size:</b>28</span>
+                </p>
+                <i class="fa-regular fa-trash-can"></i>
+                <div>
+                  <p class="hide">
+                    <span><b>Size:</b>28</span>
+                  </p>
+                  <i class="fa-solid fa-minus"></i>
+                  <span class="span">1</span>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__yourzakaz-clothes">
+            <div class="main__yourzakaz-img">
+              <img src="../img/okambe.png" alt="boywithhuddi" />
+            </div>
+            <div class="main__yourzakaz-info">
+              <div>
+                <b>Худи мужская белая с принтом.</b>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <div class="hide">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+                <span>3,5</span>
+              </div>
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
+                tellus purus, id pretium viverra rutrum. Et blandit nunc a
+                pellentesque in cras facilisis sapien, dictum. At vel egestas
+                urna morbi tortor leo ut. In curabitur at pretium vulputate in.
+                Porta bibendum feugiat congue id rhoncus. Vel semper enim, eget.
+              </p>
+              <div>
+                <p>
+                  25.000 Сум <span class="show"><b>Size:</b>28</span>
+                </p>
+                <i class="fa-regular fa-trash-can"></i>
+                <div>
+                  <p class="hide">
+                    <span><b>Size:</b>28</span>
+                  </p>
+                  <i class="fa-solid fa-minus"></i>
+                  <span class="span">1</span>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__yourzakaz-clothes third">
+            <div class="main__yourzakaz-img">
+              <img src="../img/okambe.png" alt="boywithhuddi" />
+            </div>
+            <div class="main__yourzakaz-info">
+              <div>
+                <b>Худи мужская белая с принтом.</b>
+              </div>
+              <div>
+                <p>25.000 Сум</p>
+                <i class="fa-regular fa-trash-can"></i>
+                <div>
+                  <i class="fa-solid fa-minus"></i>
+                  <span class="span">1</span>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__shops">
+          <h3>Магазины</h3>
+          <div class="main__shops-example">
+            <img src="../img/treyol.png" alt="treyol" />
+            <img src="../img/boyner.png" alt="boyner" />
+            <img src="../img/pollo.png" alt="pollo" />
+            <img src="../img/blaabla.png" alt="nimadir" />
+          </div>
+        </section>
+        <section class="main__categories">
+          <h3>Категории</h3>
+          <div class="main__categories-items">
+            <button>Одежда</button>
+            <img src="../img/zara.png" alt="zara" />
+            <img src="../img/mavi.png" alt="mavi" />
+            <img src="../img/pek.png" alt="pek" />
+            <img src="../img/network2.png" alt="network" />
+            <button>Детская одежда</button>
+            <img src="../img/lcwakiki.png" alt="lcwakiki" />
+            <img src="../img/katon.png" alt="katon" />
+            <img src="../img/civil.png" alt="civil" />
+            <img src="../img/defacto.png" alt="defacto" />
+            <button>Обувь</button>
+            <img src="../img/flo.png" alt="flo" />
+            <img src="../img/dunyadi.png" alt="dunyadi" />
+            <img src="../img/intstreet.png" alt="intstreet" />
+            <img src="../img/marka.png" alt="marka" />
+            <button>Домашний текстиль</button>
+            <img src="../img/tac.png" alt="tac" />
+            <img src="../img/enghome.png" alt="enghome" />
+            <img src="../img/cotton.png" alt="cotton" />
+            <img src="../img/madame.png" alt="madame" />
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__wrapper-about">
+            <b>про imperia</b>
+            <p>
+              Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Eget <br>
+              pretium aenean dignissim sit cursus <br> dictumst adipiscing nunc.
+            </p>
+            <img src="../img/Logo (1).svg" alt="logo">
+          </div>
+          <ul class="footer__wrapper-contact">
+            <li class="footer__wrapper-item"><a href="#" class="footer__wrapper-link">контакты</a></li>
+            <li class="footer__wrapper-item"><a href="#" class="footer__wrapper-link">+998 90 958 78 87</a></li>
+            <li class="footer__wrapper-item"><a href="#" class="footer__wrapper-link">support@fonon.uz</a></li>
+            <li class="footer__wrapper-item"><a href="#" class="footer__wrapper-link">рабочее время</a></li>
+            <li class="footer__wrapper-item"><a href="#" class="footer__wrapper-link">По будням 9:00 to 18:00</a></li>
+            <li class="footer__wrapper-item"><a href="#" class="footer__wrapper-link">В выходные 11:00 to 18:00</a></li>
+          </ul>
+          <ul class="footer__wrapper-menu">
+            <li class="footer__wrapper-item"><a href="#" class="footer__wrapper-link">Меню</a></li>
+            <li class="footer__wrapper-item"><a href="#" class="footer__wrapper-link">Главная</a></li>
+            <li class="footer__wrapper-item"><a href="#" class="footer__wrapper-link">О нас</a></li>
+            <li class="footer__wrapper-item"><a href="#" class="footer__wrapper-link">Категории</a></li>
+            <li class="footer__wrapper-item"><a href="#" class="footer__wrapper-link">Сотрудничество</a></li>
+          </ul>
+          <ul class="footer__wrapper-categories">
+            <li class="footer__wrapper-item"><a href="#" class="footer__wrapper-link">категории</a></li>
+            <li class="footer__wrapper-item"><a href="#" class="footer__wrapper-link">Женская одежда</a></li>
+            <li class="footer__wrapper-item"><a href="#" class="footer__wrapper-link">Мужская одежда</a></li>
+            <li class="footer__wrapper-item"><a href="#" class="footer__wrapper-link">Детская одежда</a></li>
+            <li class="footer__wrapper-item"><a href="#" class="footer__wrapper-link">Обувь</a></li>
+            <li class="footer__wrapper-item"><a href="#" class="footer__wrapper-link">Сумки</a></li>
+            <li class="footer__wrapper-item"><a href="#" class="footer__wrapper-link">Аксесуары</a></li>
+          </ul>
+        </div>
+        <div class="footer__wrapper2">
+          <p>High fidelity wireframes include more real content, <br> specific typography choices, and information on image.</p>
+          <div class="footer__wrapper2-lists">
+            <ul class="footer__wrapper2-list">
+              <li class="footer__wrapper2-item"><a href="#" class="footer__wrapper2-link">Catalog</a></li>
+              <li class="footer__wrapper2-item"><a href="#" class="footer__wrapper2-link">Popular</a></li>
+              <li class="footer__wrapper2-item"><a href="#" class="footer__wrapper2-link">Pricing</a></li>
+              <li class="footer__wrapper2-item"><a href="#" class="footer__wrapper2-link">Features</a></li>
+            </ul>
+            <ul class="footer__wrapper2-list">
+              <li class="footer__wrapper2-item"><a href="#" class="footer__wrapper2-link">About</a></li>
+              <li class="footer__wrapper2-item"><a href="#" class="footer__wrapper2-link">Blog</a></li>
+              <li class="footer__wrapper2-item"><a href="#" class="footer__wrapper2-link">Contacts</a></li>
+            </ul>
+          </div>
+          <hr>
+          <p><i class="fa-solid fa-location-dot"></i> <span>Los Angeles, <br>
+            359  Hidden Valley Road</span></p>
+            <p><i class="fa-solid fa-envelope"></i> <span>Hellohero@gmail.com</span></p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
