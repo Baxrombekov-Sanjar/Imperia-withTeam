@@ -1,1 +1,96 @@
 // Лучшие категории
+.section3 {
+    width: 100%;
+    height: 450px;
+    border: 1px solid none;
+    margin-top: 20px;
+    .main_section3-text {
+        width: 100%;
+        height: 10%;
+        border: 1px solid none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .main_section3-text-h2 {
+            font-size: 34px;
+        }
+    }
+    .main_section3-img {
+        width: 100%;
+        height: 90%;
+        border: 1px solid none;
+        .main_section3-img-ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .main_section3-img-li-1 {
+                width: 270px;
+                height: 335px;
+                border: 1px solid none;
+                margin-top: 20px;
+                .main_section3-img-h2 {
+                    text-align: center;
+                    padding-top: 10px;
+                }
+            }
+            .main_section3-img-li-2 {
+                width: 270px;
+                height: 335px;
+                border: 1px solid none;
+                margin-top: 20px;
+                .main_section3-img-h2 {
+                    text-align: center;
+                    padding-top: 10px;
+                }
+            }
+            .main_section3-img-li-3 {
+                width: 270px;
+                height: 335px;
+                border: 1px solid none;
+                margin-top: 20px;
+                .main_section3-img-h2 {
+                    text-align: center;
+                    padding-top: 10px;
+                }
+            }
+            .main_section3-img-li-4 {
+                width: 270px;
+                height: 335px;
+                border: 1px solid none;
+                margin-top: 20px;
+                .main_section3-img-h2 {
+                    text-align: center;
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+
+
+    @media only screen and (max-width:400px) {
+        .main_section3-text {
+            width: 600px;
+            .main_section3-text-h2 {
+                font-size: 58px;
+                margin-left: 80px;
+            }
+        }
+        .main_section3-img {
+            margin-top: 100px;
+            margin-left: 50px;
+            .main_section3-img-li-3 {
+                display: none;
+            }
+            .main_section3-img-li-1 {
+                margin-left: -85px;
+            }
+            .main_section3-img-li-2{
+                margin-left: -120px;
+            }
+            // .main_section3-img-li-4 {
+            //     display: none;
+            // }
+        }
+    }
+}
