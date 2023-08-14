@@ -491,7 +491,29 @@ template {
   font-weight: 600;
   line-height: 140%;
 }
+.main__payment-input button .hide {
+  display: none;
+}
 
+@media screen and (max-width: 400px) {
+  .main h4 {
+    text-align: left;
+    padding-left: 28px;
+  }
+  .main__payment-img {
+    display: none;
+  }
+  .main__payment-input {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .main__payment-input button .show {
+    display: none;
+  }
+  .main__payment-input button .hide {
+    display: block;
+  }
+}
 .footer {
   fill: var(--white, #fff);
 }
