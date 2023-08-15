@@ -1,1 +1,86 @@
 // Оформление заказа
+.main {
+  background: var(--gray-6, #fafafa);
+  h3 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-top: 32px;
+    line-height: 140%;
+    letter-spacing: 0.25px;
+    text-align: center;
+  }
+  &__zakaz {
+    &-ofarmit {
+      margin-top: 32px;
+      width: 100%;
+      border-radius: 12px;
+      background: var(--white, #fff);
+      padding: 25px 24px 27px 295px;
+      h4 {
+        font-variant-numeric: lining-nums proportional-nums;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 140%;
+        padding-bottom: 47px;
+      }
+      img {
+        margin-bottom: 12px;
+      }
+    }
+    &-tovards {
+      margin-top: 43px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      div {
+        display: flex;
+        p {
+          &:first-child {
+            padding-right: 80px;
+          }
+        }
+      }
+      img {
+        margin-top: 10px;
+      }
+    }
+    &-btn {
+      display: flex;
+      justify-content: end;
+      button {
+        margin-top: 28px;
+        border: 0;
+        width: 376px;
+        height: 56px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 140%;
+        letter-spacing: 0.75px;
+        text-transform: uppercase;
+        background-color: $yellow;
+      }
+    }
+    &-warning {
+      margin-top: 32px;
+      color: #fff;
+      background: #ff5959;
+      padding: 13px 0;
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .main {
+    &__zakaz {
+      &-ofarmit {
+        display: none;
+        border: 1px solid #000;
+      }
+    }
+  }
+}
+
+// zakaz.scss checked
