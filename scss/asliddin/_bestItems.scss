@@ -48,3 +48,48 @@
         }
     }
 }
+
+
+@media screen and (max-width: 400px) {
+    .best-items{
+        width: 100%;
+        border: var(--border);
+        display: flex;
+        justify-content: center;
+        &_container{
+            width: 88%;
+            border: var(--border);
+            &-sale{
+                width: 100%;
+                display: flex;
+                border: var(--border);
+                img{
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    background: white;
+                }
+                &-items{
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    width: 90%;
+                    padding: 10px 5px;
+                    background-color: #fff;
+                    margin-top: -10px;
+                    margin-bottom: 10px;
+                    p{
+                        font-size: 15px;
+                        margin-top: 10px;
+                        margin-bottom: 5px;     
+                    }
+                }
+            }
+        .carousel{
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        }
+        
+    }
+}

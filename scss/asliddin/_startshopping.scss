@@ -30,3 +30,45 @@
         }
     }
 }
+
+
+
+@media screen and (max-width: 400px) {
+    .start-shopping{
+        width: 100%;
+        border: var(--border);
+        display: flex;
+        justify-content: center;
+        &_container{
+            width: 88%;
+            border: var(--border);
+            background: white;
+            h2{
+                padding: 10px 10px;
+                line-height: 35px;
+            }
+            p{
+                line-height: 22.4px;
+                font-size: 16px;
+                font-weight: 400;
+                letter-spacing: 0.44px;
+                padding: 10px 10px;
+            }
+            div{
+                text-align: center;
+            }
+            button{
+                width: 220px;
+                height: 40px;
+                letter-spacing: 0.75px;
+                font-weight: 600;
+                font-size: 18px;
+                background: #FFC000;
+                border-radius: 6px;
+                border: 0px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

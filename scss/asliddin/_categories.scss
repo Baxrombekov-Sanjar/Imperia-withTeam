@@ -20,3 +20,34 @@
         margin-bottom: 270px;
     }
 }
+
+
+@media screen and (max-width: 400px) {
+    .categories{
+        width: 100%;
+        border: var(--border);
+        display: flex;
+        justify-content: center;
+        &-container{
+            width: 88%;
+            border: var(--border);
+            display: block;
+            img{
+                text-align: center;
+                margin-top: 10px;
+            }
+            &-img{
+                display: flex;
+                justify-content: space-between;
+                div{
+                    // text-align: center;  
+                    p{
+                        font-size: 18px;
+                        margin-top: 10px;
+                        font-weight:600;
+                    }
+                }
+            }
+        }
+    }
+}
