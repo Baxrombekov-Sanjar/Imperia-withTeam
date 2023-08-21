@@ -62,11 +62,11 @@
     }
 
 
-    @media only screen and (max-width:400px) {
-        .footer {
-            width: 200px;
-            height: 200px;
-            border: 1px solid red;
-        }
+}
+@media screen and (max-width:400px) {
+    .footer {
+        // border: 1px solid red;
+        background-color: red;
+        margin-top: 1000px;
     }
 }

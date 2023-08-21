@@ -143,48 +143,51 @@
     }
 
 
-    @media only screen and (max-width:400px) {
-        .main__section2-text {
-            margin-top: 900px;
-            .main__section2-text-h2 {
-                margin-left: -560px;
-                font-size: 60px;
-            }
+}
+@media only screen and (max-width:400px) {
+    .main__section2-text {
+        margin-top: 900px;
+        .main__section2-text-h2 {
+            margin-left: -560px;
+            font-size: 60px;
         }
-        .main__section2-img {
-            margin-left: 50px;
-            .main__section2-img-ul {
-                display: flex;
-                .main__section2-img-li-2 {
+    }
+    .main_section2-img-li-4 {
+        display: none;
+    }
+    .main__section2-img {
+        margin-left: 50px;
+        .main__section2-img-ul {
+            display: flex;
+            .main__section2-img-li-2 {
+                display: none;
+            }
+            .main__section2-img-li-1 {
+                margin-left: -85px;
+                .main__section2-img-p {
                     display: none;
                 }
-                .main__section2-img-li-1 {
-                    margin-left: -85px;
-                    .main__section2-img-p {
-                        display: none;
-                    }
-                    .main__section2-img-btn {
-                        display: none;
-                    }
-                    .main__section2-img-h2 {
-                        font-size: 20px;
-                        line-height: 30px;
-                    }
+                .main__section2-img-btn {
+                    display: none;
                 }
-                .main__section2-img-li-3 {
-                    margin-left: -150px;
-                    .main__section2-img-p {
-                        display: none;
-                    }
-                    .main__section2-img-btn {
-                        display: none;
-                    }
-                    .main__section2-img-h2 {
-                        font-size: 20px;
-                        line-height: 30px;
-                    }
+                .main__section2-img-h2 {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+            .main__section2-img-li-3 {
+                margin-left: -150px;
+                .main__section2-img-p {
+                    display: none;
+                }
+                .main__section2-img-btn {
+                    display: none;
+                }
+                .main__section2-img-h2 {
+                    font-size: 20px;
+                    line-height: 30px;
                 }
             }
         }
     }
-   }
+}
