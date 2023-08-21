@@ -1,1 +1,35 @@
 // Работаем по всему миру.
+.main {
+  &__work {
+    margin-top: 150px;
+    display: flex;
+
+    h3 {
+      font-size: 46px;
+      font-weight: 900;
+      line-height: 64px;
+      text-align: left !important;
+      margin-left: 128px;
+    }
+    &-lists {
+      margin-left: 128px;
+
+      margin-top: 65px;
+      ul {
+        list-style: none;
+        li {
+          line-height: 32px;
+          &:nth-child(1) {
+            font-weight: 700;
+          }
+        }
+      }
+      display: grid;
+      gap: 25px;
+      text-align: left;
+      grid-template-columns: auto auto;
+    }
+  }
+}
+
+// work scss checked
