@@ -1,0 +1,74 @@
+// начать покупки   
+:root{
+    // --border: 1px solid;
+}
+
+.start-shopping{
+    margin-top: 80px;
+    border: var(--border);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    &-img{
+        width: 50%;
+        border: var(--border);
+    }
+    &-item{
+        margin-left: 40px;
+        border: var(--border);
+        width: 48%;
+        p{
+            line-height: 23px;
+        }
+        button{
+            width: 200px;
+            height: 30px;
+            border-radius: 5px;
+            border: 0px;
+            background: #FFC000;
+            margin-top: 20px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .start-shopping{
+        width: 100%;
+        border: var(--border);
+        display: flex;
+        justify-content: center;
+        &_container{
+            width: 88%;
+            border: var(--border);
+            background: white;
+            h2{
+                padding: 10px 10px;
+                line-height: 35px;
+            }
+            p{
+                line-height: 22.4px;
+                font-size: 16px;
+                font-weight: 400;
+                letter-spacing: 0.44px;
+                padding: 10px 10px;
+            }
+            div{
+                text-align: center;
+            }
+            button{
+                width: 220px;
+                height: 40px;
+                letter-spacing: 0.75px;
+                font-weight: 600;
+                font-size: 18px;
+                background: #FFC000;
+                border-radius: 6px;
+                border: 0px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
